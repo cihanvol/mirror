@@ -579,7 +579,7 @@ class GoogleDriveHelper:
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
                                  title = 'Mirror-leech-bot Search',
                                  author_name='Mirror-leech-bot',
-                                 author_url='https://github.com/anasty17/mirror-leech-telegram-bot',
+                                 author_url='https://t.me/YottaBox',
                                  html_content=content)
         return
 
@@ -776,7 +776,7 @@ class GoogleDriveHelper:
             self.path.append(Telegraph(access_token=telegraph_token).create_page(
                                                     title = 'Mirror-leech-bot Search',
                                                     author_name='Mirror-leech-bot',
-                                                    author_url='https://github.com/anasty17/mirror-leech-telegram-bot',
+                                                    author_url='https://t.me/YottaBox',
                                                     html_content=content
                                                     )['path'])
 
