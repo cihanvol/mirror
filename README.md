@@ -67,7 +67,7 @@ Deploying is pretty much straight forward and is divided into several steps as f
 
 - Clone this repo:
 ```
-git clone https://t.me/YottaBox mirrorbot/ && cd mirrorbot
+git clone https://github.com/anasty17/mirror-leech-telegram-bot mirrorbot/ && cd mirrorbot
 ```
 
 - Install requirements
@@ -131,12 +131,12 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 ### Optional Field
 - `ACCOUNTS_ZIP_URL`: Only if you want to load your Service Account externally from an Index Link. Archive the accounts folder to a zip file. Fill this with the direct link of that file.
 - `TOKEN_PICKLE_URL`: Only if you want to load your **token.pickle** externally from an Index Link. Fill this with the direct link of that file.
-- `MULTI_SEARCH_URL`: Check `drive_folder` setup [here](https://t.me/YottaBox# Multi search IDs). Upload `drive_folder` file [here](https://gist.github.com/). Open the raw file of that gist, it's URL will be your required variable.
-- `DATABASE_URL`: Your Database URL. See [Generate Database](https://t.me/YottaBox/tree/master#generate-database) to generate database (**NOTE**: If you use database you can save your Sudo ID permanently using `/addsudo` command).
+- `MULTI_SEARCH_URL`: Check `drive_folder` setup [here](https://github.com/anasty17/mirror-leech-telegram-bot/tree/master#multi-search-ids). Upload **drive_folder** file [here](https://gist.github.com/). Open the raw file of that gist, it's URL will be your required variable.
+- `DATABASE_URL`: Your Database URL. See [Generate Database](https://github.com/anasty17/mirror-leech-telegram-bot/tree/master#generate-database) to generate database (**NOTE**: If you use database you can save your Sudo ID permanently using `/addsudo` command).
 - `AUTHORIZED_CHATS`: Fill user_id and chat_id (not username) of groups/users you want to authorize. Separate them with space, Examples: `-0123456789 -1122334455 6915401739`.
 - `SUDO_USERS`: Fill user_id (not username) of users whom you want to give sudo permission. Separate them with space, Examples: `0123456789 1122334455 6915401739` (**NOTE**: If you want to save Sudo ID permanently without database, you must fill your Sudo Id here).
 - `IS_TEAM_DRIVE`: Set to `True` if `GDRIVE_FOLDER_ID` is from a Team Drive else `False` or Leave it empty. `Bool`
-- `USE_SERVICE_ACCOUNTS`: (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using Service Accounts](https://t.me/YottaBox#generate-service-accounts-what-is-service-account) section below.
+- `USE_SERVICE_ACCOUNTS`: (Leave empty if unsure) Whether to use Service Accounts or not. For this to work see [Using Service Accounts](https://github.com/anasty17/mirror-leech-telegram-bot#generate-service-accounts-what-is-service-account) section below.
 - `INDEX_URL`: Refer to https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index The URL should not have any trailing '/'
 - `MEGA_API_KEY`: Mega.nz API key to mirror mega.nz links. Get it from [Mega SDK Page](https://mega.nz/sdk)
 - `MEGA_EMAIL_ID`: Your E-Mail ID used to sign up on mega.nz for using premium account (Leave though)
@@ -157,7 +157,7 @@ Fill up rest of the fields. Meaning of each field is discussed below:
 - `RECURSIVE_SEARCH`: Set this to `True` to search in sub-folders with `/list` (**NOTE**: This will only work with Shared-Drive ID or fill `root` for main Drive. Folder IDs are not compatible with it.)
 - `TG_SPLIT_SIZE`: Size of split in bytes, leave it empty for max size `2GB`.
 - `AS_DOCUMENT`: Default Telegram file type upload. Empty or `False` means as media. `Bool`
-- `EQUAL_SPLITS`: Split files larger than `TG_SPLIT_SIZE` into equal parts size. `Bool`
+- `EQUAL_SPLITS`: Split files larger than **TG_SPLIT_SIZE** into equal parts size. `Bool`
 - `CUSTOM_FILENAME`: Add custom word to leeched file name.
 - `SHORTENER_API`: Fill your Shortener API key.
 - `SHORTENER`: Shortener URL.
@@ -246,7 +246,7 @@ sudo docker run -p 80:80 mirror-bot
 
 ### Using Docker-compose, you can edit and build your image in seconds:
 
-**NOTE**: If you want to use port other than 80, change it in [docker-compose.yml](https://t.me/YottaBox/blob/master/docker-compose.yml)
+**NOTE**: If you want to use port other than 80, change it in [docker-compose.yml](https://github.com/anasty17/mirror-leech-telegram-bot/blob/master/docker-compose.yml)
 
 ```
 sudo apt install docker-compose

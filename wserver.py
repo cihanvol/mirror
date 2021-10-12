@@ -205,13 +205,13 @@ input[type="submit"]:hover, input[type="submit"]:focus{
           src="https://telegra.ph/file/cc06d0c613491080cc174.png"
           alt="logo"
         />
-        <a href="https://t.me/YottaBox"> 
+        <a href="https://t.me/mirrorLeechTelegramBot"> 
           <h2 class="name">Qbittorrent Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://t.me/YottaBox"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/YottaBox"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.github.com/anasty17/mirror-leech-telegram-bot"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/mirrorLeechTelegramBot"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -530,13 +530,13 @@ section span{
           src="https://telegra.ph/file/cc06d0c613491080cc174.png"
           alt="logo"
         />
-        <a href="https://t.me/YottaBox">
+        <a href="https://t.me/mirrorLeechTelegramBot">
           <h2 class="name">Qbittorrent Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://t.me/YottaBox"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/YottaBox"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.github.com/anasty17/mirror-leech-telegram-bot"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/mirrorLeechTelegramBot"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -705,7 +705,7 @@ async def set_priority(request):
 @routes.get('/')
 async def homepage(request):
 
-    return web.Response(text="mirror-leech", content_type="text/html")
+    return web.Response(text="<h1>See mirror-leech-telegram-bot <a href='https://www.github.com/anasty17/mirror-leech-telegram-bot'>@GitHub</a> By <a href='https://github.com/anasty17'>Anas</a></h1>", content_type="text/html")
 
 
 async def e404_middleware(app, handler):
