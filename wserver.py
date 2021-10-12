@@ -205,9 +205,13 @@ input[type="submit"]:hover, input[type="submit"]:focus{
           src="https://telegra.ph/file/cc06d0c613491080cc174.png"
           alt="logo"
         />
-        <a href="https://t.me/mirrorLeechTelegramBot"> 
+        <a href="https://t.me/YottaBox"> 
           <h2 class="name">Qbittorrent Selection</h2>
         </a>
+      </div>
+      <div class="social">
+        <a href="https://t.me/YottaBox"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/YottaBox"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -526,11 +530,14 @@ section span{
           src="https://telegra.ph/file/cc06d0c613491080cc174.png"
           alt="logo"
         />
-        <a>
+        <a href="https://t.me/YottaBox">
           <h2 class="name">Qbittorrent Selection</h2>
         </a>
       </div>
-      
+      <div class="social">
+        <a href="https://t.me/YottaBox"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/YottaBox"><i class="fab fa-telegram"></i></a>
+      </div>
     </header>
     <section>
       <form action="{form_url}">
@@ -698,7 +705,7 @@ async def set_priority(request):
 @routes.get('/')
 async def homepage(request):
 
-    return web.Response(text="<h1>Welcome.</h1>", content_type="text/html")
+    return web.Response(text="mirror-leech", content_type="text/html")
 
 
 async def e404_middleware(app, handler):
